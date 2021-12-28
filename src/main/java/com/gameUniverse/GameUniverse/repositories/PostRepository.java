@@ -1,0 +1,10 @@
+package com.gameUniverse.GameUniverse.repositories;
+
+import com.gameUniverse.GameUniverse.entities.Post;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface PostRepository extends JpaRepository<Post, Long> {
+    Optional<Post> findByTitleAndId(String title, long id);
+}
