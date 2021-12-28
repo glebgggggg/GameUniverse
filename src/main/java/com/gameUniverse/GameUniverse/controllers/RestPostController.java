@@ -18,7 +18,7 @@ import javax.validation.Valid;
 public class RestPostController {
     private final PostService postService;
 
-    /*@GetMapping("/book/{id}")
+    /*@GetMapping("/post/{id}")
     public ResponseEntity<PostInfoResponse> getBook(final @PathVariable Long id) {
         return new ResponseEntity<>(this.postService.showOne(new DeleteAndFindRequest(id)), HttpStatus.OK);
     }*/

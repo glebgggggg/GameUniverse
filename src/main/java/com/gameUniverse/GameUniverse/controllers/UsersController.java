@@ -28,7 +28,7 @@ public class UsersController {
     public ModelAndView addNewUser(
             @Valid @ModelAttribute("request") NewUserRequest request, ModelAndView modelAndView
     ) {
-        modelAndView.setViewName("/users/newUser");
+        modelAndView.setViewName("/user/addUser");
         modelAndView.addObject("user", this.userService.addNewUser(request));
 
         return modelAndView;

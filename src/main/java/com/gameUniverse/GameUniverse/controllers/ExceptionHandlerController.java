@@ -62,7 +62,7 @@ public class ExceptionHandlerController {
                 request.getServletPath()
         );
 
-        log.error("BookPrj exception: " + exception.getMessage(), exception);
+        log.error("GameUn. exception: " + exception.getMessage(), exception);
         return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
